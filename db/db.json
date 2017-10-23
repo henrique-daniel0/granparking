@@ -2,27 +2,9 @@
   "users": [
     {
       "name": "Daniel",
-      "idade": 20,
+      "age": 20,
       "cpf": 35991112860,
-      "celular": 11993089177
-    },
-    {
-      "name": "Daniel",
-      "idade": 20,
-      "cpf": 35991112860,
-      "celular": 11993089177
-    },
-    {
-      "name": "Daniel",
-      "idade": 20,
-      "cpf": 35991112860,
-      "celular": 11993089177
-    },
-    {
-      "name": "Daniel",
-      "idade": 20,
-      "cpf": 35991112860,
-      "celular": 11993089177
+      "phone": 11993089177
     }
   ]
 }

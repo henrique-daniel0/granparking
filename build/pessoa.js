@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Pessoa {
-    constructor(name, idade, cpf, celular) {
+    constructor(name, age, cpf, phone) {
         this.name = name;
-        this.idade = idade;
+        this.age = age;
         this.cpf = cpf;
-        this.celular = celular;
+        this.phone = phone;
     }
 }
 exports.default = Pessoa;
