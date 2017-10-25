@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// main.ts
-const pessoa_1 = require("./pessoa");
-const db_1 = require("./db");
-//import dbStatus from './db';
-var daniel = new pessoa_1.default('Daniel', 20, 35991112860, 11993089177);
-db_1.default('users', daniel);
-//dbStatus();
+var person_1 = require("./person");
+var db_1 = require("./db");
+var daniel = new person_1.Person('Daniel', 20, 35991112860, 11993089177);
+db_1.getUser();

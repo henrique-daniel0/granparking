@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
-        "target": "es2016",
+        "noEmitOnError": true,
+        "removeComments": true,
+        "target": "es5",
         "module": "commonjs",
         "outDir": "build",
     }
