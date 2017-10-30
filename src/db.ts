@@ -18,8 +18,16 @@ function dbStatus() {
 }
 
 //metdodo para consutar usuarios
-function getUser() {
-    return console.log(db.get('users').find({ "name": "Daniel" }).value());
+function getUser(user:string) {
+    //console.log(db.get('users').find({ "name": ""}).value());
+    //console.log(db.get('users').map().value()); //mapeia o banco pela key
+    if (typeof user == 'string') {
+        let obj:string = db.get('users').filter({name: user}).value();
+        return console.log(obj);
+    }
+    else {
+        console.log('Erro 404: user not found');
+    }
 }
 
 //exportando meus metdodos

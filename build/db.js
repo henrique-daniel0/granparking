@@ -13,7 +13,13 @@ function dbStatus() {
     console.log(db.getState());
 }
 exports.dbStatus = dbStatus;
-function getUser() {
-    return console.log(db.get('users').find({ "name": "Daniel" }).value());
+function getUser(user) {
+    if (typeof user == 'string') {
+        var obj = db.get('users').filter({ name: user }).value();
+        return console.log(obj);
+    }
+    else {
+        console.log('Erro 404: user not found');
+    }
 }
 exports.getUser = getUser;
